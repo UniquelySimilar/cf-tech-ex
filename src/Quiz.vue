@@ -73,7 +73,6 @@ export default {
       }
 
       // Update question object with answer
-      this.questionsExt[this.currentIdx].answer = this.selectedAnswer;
       this.currentQuestion.answer = this.selectedAnswer;
 
       // Reset
@@ -81,7 +80,6 @@ export default {
       this.showWarning = false;
 
       // Select next question if available, or show summary
-      //console.log(this.currentQuestion)
       if (this.currentIdx < this.questionsExt.length - 1) {
         this.currentIdx++;
       }
